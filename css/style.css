@@ -1,0 +1,38 @@
+/* by Vitalij Murovejko */
+
+.bodystyle {
+    padding: 35px;
+}
+
+.rowone {
+    height: 80px;
+}
+
+.bgrrow2 {
+    background-image: url("../image/htcss.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* start rotate */
+
+.spin {
+    display: inline-block;
+    /* Анимация */
+    -webkit-animation: spin 20s linear 0s infinite normal;
+    -moz-animation: spin 20s linear 0s infinite normal;
+    -o-animation: spin 20s linear 0s infinite normal;
+    animation: spin 20s linear 0s infinite normal;
+}
+/* Задаём вращение */
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); } }
+@-moz-keyframes spin { from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); } }
+@-o-keyframes spin { from { -o-transform: rotate(0deg); }
+    to { -o-transform: rotate(360deg); } }
+@keyframes spin { from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); } }
+
+/* end rotate block */
